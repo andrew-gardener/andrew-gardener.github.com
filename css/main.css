@@ -1,0 +1,36 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* https://github.com/twbs/bootstrap/issues/1768 */
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
+/* about */
+.profile_pic {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .profile_pic {
+    display: none;
+  }
+}
+
+/* resume */
+.spacing {
+  padding: 12px 0px;
+}
+
+.separator {
+  border-top: 1px solid #cccccc;
+}
